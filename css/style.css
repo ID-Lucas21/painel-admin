@@ -14,12 +14,12 @@ body {
 
 /* left-padding */
 .xarea {
-    
+    padding-left: 245px;
 }
 
 /* navigation */
 .nav {
-    background-color: #1a1a1a;
+    background-color: #080808;
     padding: 20px 30px;
     box-shadow: 0px 3px 9px #00000066;
     width: 100%;
@@ -78,8 +78,8 @@ body {
 
 /* side-menu */
 .side {
-    background-color: #111111;
-    padding: 20px 30px;
+    background-color: #080808;
+    padding: 0;
     box-shadow: 3px 0px 9px #00000066;
     position: fixed;
     height: 100%;
@@ -95,7 +95,6 @@ body {
 }
 
 .side-item {
-    margin: 0 auto 15px 0;
 
 }
 
@@ -104,18 +103,32 @@ body {
 }
 
 .side-title {
-    margin: 0;
+    margin: auto 0;
     font-size: 16px;
-    font-weight: bold;
     color: #ffffff;
+    background-color: #000000;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+}
+
+.side-text {
+    font-weight: normal;
+    font-size: 16px;
+    margin: auto 0;
+
 }
 
 .side-link:link {
+    margin: auto 0;
+    padding: 20px 30px;
     color: #ffffff;
     opacity: 0.5;
     font-size: 16px;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .side-link:visited {
@@ -125,6 +138,7 @@ body {
 
 .side-link:hover {
     color: #ffffff;
+    background-color: #050505;
     position: relative;
     top: -2px;
     opacity: 1;
@@ -132,5 +146,37 @@ body {
 
 .side-link:active {
     color: #ffffff;
+    background-color: #000000;
     opacity: 1;
+}
+
+/* Main content */
+.index-content {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.text {
+    color: #000000;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+
+/* Index */
+.index-image {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 15px auto;
 }
