@@ -189,7 +189,10 @@ body {
     margin: 0 auto 15px auto;
 }
 
+/* -------- Cuidado! A partir deste ponto tudo foi criado com magia -------- */
 @media screen and (max-width: 767px) {
+
+    /* Navigation */
     .nav {
         top: 0px;
     }
