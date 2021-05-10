@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
 }
 
 /* top-padding */
@@ -182,15 +182,21 @@ body {
     margin: 0 auto;
 }
 
-/* Index */
+/* Index 
 .index-image {
     width: 64px;
     height: 64px;
     margin: 0 auto 15px auto;
 }
+*/
 
 /* -------- Cuidado! A partir deste ponto tudo foi criado com magia -------- */
 @media screen and (max-width: 767px) {
+
+    /* left-padding */
+    .xarea {
+        padding-left: 0px;
+    }
 
     /* Navigation */
     .nav {
