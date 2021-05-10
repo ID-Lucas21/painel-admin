@@ -18,6 +18,13 @@ body {
 }
 
 /* navigation */
+#control-nav {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
 .nav {
     background-color: #080808;
     padding: 20px 30px;
@@ -74,6 +81,7 @@ body {
     margin: 0;
     color: #666666;
     font-size: 16px;
+    visibility: visible;
 }
 
 /* side-menu */
@@ -179,4 +187,60 @@ body {
     width: 64px;
     height: 64px;
     margin: 0 auto 15px auto;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        top: 0px;
+    }
+
+    .nav-part {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        visibility: hidden;
+    }
+
+    .control-nav {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        display: block;
+        width: 30px;
+        padding: 5px 0;
+        border: solid #ffffff;
+        border-width: 3px 0;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .control-nav:before {
+        content: "";
+        display: block;
+        height: 3px;
+        background: #ffffff;
+    }
+
+    .side {
+        position: fixed;
+        top: 70px;
+        right: 0;
+        bottom: 0;
+        width: 250px;
+        background: #080808;
+        overflow-x: auto;
+        z-index: 5;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform: translate(100%, 0);
+        -ms-transform: translate(100%, 0);
+        transform: translate(100%, 0);
+    }
+
+    #control-nav:checked ~ .side {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
 }
