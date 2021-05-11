@@ -34,7 +34,6 @@
             <!-- #side-menu -->
             <input type="checkbox" id="control-nav" />
             <label for="control-nav" class="control-nav"></label>
-            <label for="control-nav" class="control-nav-close"></label>
 
             <aside class="side">
                 <ul class="side-list">
@@ -58,10 +57,122 @@
                     <p class="text">Daqui a pouco eu termino essa página aqui!</p>
                     -->
 
+                    <div class="row-card">
+                        <section class="card">
+                            <div class="card-head">
+                                <h1 class="card-title">Estatísticas gerais</h1>
+                                <img class="refresh" src="images/refresh.png"  alt="refresh">
+                            </div>
+
+                            <div class="row-general">
+                                <div class="col-content">
+                                    <div class="circle-graph">
+                                        <h1 class="circle-title">$123</h1>
+                                        </div>
+                                    <div>
+                                        <p class="circle-sub">Usuários cadastrados</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-stat">
+                                    <div class="stat">
+
+                                        <div class="line-green"></div>
+
+                                        <div class="stat-info">
+                                            <div class="stat-content">
+                                                <p class="text">Consumidores</p>
+                                                <div class="row-content">
+                                                    <h1 class="card-title2">$123</h1>
+                                                    <p class="stat-counter">($123 novos)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="stat">
+                                        <div class="line-yellow"></div>
+
+                                        <div class="stat-content">
+                                            <p class="text">Estabelecimentos</p>
+                                            <div class="row-content">
+                                                <h1 class="card-title2">$123</h1>
+                                                <p class="stat-counter">($123 novos)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-orders">
+
+                                    <img class="orders-img" src="images/b-tag.png" alt="tag">
+                                    <div class="orders">
+                                        <p class="text">Pedidos feitos no aplicativo</p>
+
+                                        <div class="orders-content">
+                                            <h1 class="card-title2">$123</h1>
+                                            <p class="stat-counter">($123 novos)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="card">
+                            <div class="card-head">
+                                <h1 class="card-title">Filtrar por tempo</h1>
+                                <img class="refresh" src="images/refresh.png"  alt="refresh">
+                            </div>
+
+                            <div class="filter">
+                                <!-- #side-menu -->
+                                <input type="checkbox" id="start-time" />
+                                <label for="start-time" class="start-time">Desde o começo</label>
+
+                                <input type="checkbox" id="thirty-time" />
+                                <label for="thirty-time" class="thirty-time">Últimos 30 dias</label>
+
+                                <input type="checkbox" id="today-time" />
+                                <label for="today-time" class="today-time">Hoje</label>
+                            </div>
+
+                            <div class="dates">
+                                <div class="date-pick">
+                                    <label for="s-date" class="s-date">A partir de</label>
+                                    <input id="s-date" type="date">
+                                </div>
+
+                                <div class="date-pick">
+                                    <label for="e-date" class="e-date">Até</label>
+                                    <input id="e-date" type="date">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
                     <section class="card">
                         <div class="card-head">
-                            <h1 class="car-title">Estatísticas gerais</h1>
-                            <img class="refresh" src="images/w-exit.png"  alt="refresh">
+                            <h1 class="card-title">Cadastros recentes</h1>
+                            <img class="refresh" src="images/refresh.png"  alt="refresh">
+                        </div>
+
+                        <div class="recent-list">
+                            <div class="list-tags">
+                                <table>
+                                    <tr>
+                                        <th class="text" scope="col"><b>Nome</b></th>
+                                        <th class="text-table" scope="col"><b>Data de cadastro</b></th>
+                                        <th class="text-table" scope="col"><b>Tipo de conta</b></th>
+                                        <th class="text-table" scope="col"><b>Status</b></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="title2"scope="row">Bar do Zé</th>
+                                        <td class="text-table">11/05/2021</td>
+                                        <td class="text-table">Estabelecimento</td>
+                                        <td class="text-table">Aprovado</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </section>
                 </div>

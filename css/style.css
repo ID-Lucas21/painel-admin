@@ -158,13 +158,13 @@ body {
     opacity: 1;
 }
 
-/* Main content */
+/* main-content */
 .index-content {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px;
+    padding: 15px;
 }
 
 .title {
@@ -179,16 +179,256 @@ body {
     opacity: 0.5;
     font-size: 16px;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 0;
 }
 
-/* Index 
+.card-title2 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* index 
 .index-image {
     width: 64px;
     height: 64px;
     margin: 0 auto 15px auto;
 }
 */
+
+/* cards */
+.row-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; 
+    width: -webkit-fill-available;
+}
+
+.card-head {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* refresh */
+.refresh {
+    width: 28px;
+    height: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+}
+
+.refresh:hover {
+    opacity: 0.5;
+    -webkit-transform:rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+.refresh:active {
+    opacity: 1;
+    -webkit-transform:rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+
+/* Dashboard */
+.row-general {
+    display: flex;
+    flex-direction: row;
+}
+.circle-graph {
+    box-sizing: border-box;
+    border: #03A454 5px solid;
+    border-image: radial-gradient(#03A454), #03A454)) 1;
+    width: 136px;
+    height: 136px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 15px 30px;
+}
+
+.circle-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin: 45px 0 0 0;
+}
+
+.circle-sub {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    max-width: 136px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.col-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat {
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-counter {
+    font-size: 16px;
+    color: #999999;
+}
+
+.stat-content {
+    margin: 15px 0 0 0;
+}
+.line-green {
+    width: 5px;
+    height: 70px;
+    background-color: #03A454;
+    margin: 15px 15px 0 0;
+}
+
+.line-yellow {
+    width: 5px;
+    height: 70px;
+    background-color: #E07C26;
+    margin: 15px 15px 0 0;
+}
+
+.col-orders {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 30px;
+}
+
+.orders-img {
+    width: 76px;
+    height: 79px;
+    margin: auto 15px auto 0;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+}
+
+.start-time, .thirty-time, .today-time {
+    background-color: #ffffff;
+    border: #000000 2px solid;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 15px auto 0;
+}
+
+#start-time, #thirty-time, #today-time {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+#start-time:checked ~ .start-time, #thirty-time:checked ~ .thirty-time, #today-time:checked ~ .today-time {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-pick {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 0;
+}
+
+.s-date, .e-date {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 30px auto 15px 0;
+}
+
+#s-date, #e-date {
+    padding: 10px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    border: #000000 0px solid;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+table {
+    margin: 15px;
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    min-width: 200px;
+}
+
+.texst-table {
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    visibility: visible;
+}
 
 /* -------- Cuidado! A partir deste ponto tudo foi criado com magia -------- */
 @media screen and (max-width: 767px) {
@@ -197,6 +437,53 @@ body {
     .xarea {
         padding-left: 0px;
     }
+
+    /* Card */
+    .row-card {
+        flex-direction: column;
+    }    
+
+    /* dashboard */
+    .row-general {
+        flex-direction: column;
+    }
+
+    .circle-graph {
+        margin: 30px auto 15px auto;
+    }
+
+    .circle-sub {
+        margin: 0 auto 15px auto;
+    }
+
+    .col-orders {
+        margin: auto 0 auto 0;
+    }
+
+    .orders {
+        margin: 0 auto;
+    }
+
+    .orders-img {
+        width: 38px;
+        height: 39px;
+        margin: 15px auto 15px auto;
+    }
+
+    .orders-content {
+        margin: 0 auto;
+    }
+
+    .dates {
+        flex-direction: column;
+    }
+
+    .text-table {
+        visibility: hidden;
+        position: absolute;
+        left: -9999px;
+    }
+    
 
     /* Navigation */
     .nav {
@@ -212,7 +499,7 @@ body {
     }
 
     .control-nav {
-        position: absolute;
+        position: fixed;
         right: 30px;
         top: 25px;
         display: block;
