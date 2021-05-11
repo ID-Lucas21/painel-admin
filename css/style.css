@@ -269,7 +269,7 @@ body {
 .circle-graph {
     box-sizing: border-box;
     border: #03A454 5px solid;
-    border-image: radial-gradient(#03A454), #03A454)) 1;
+    border-image: radial-gradient(#03A454), (#03A454) 1;
     width: 136px;
     height: 136px;
     background-color: #ffffff;
