@@ -209,7 +209,7 @@ body {
     padding: 30px;
     display: flex;
     flex-direction: column; 
-    width: -webkit-fill-available;
+    width: 100%;
 }
 
 .card-head {
